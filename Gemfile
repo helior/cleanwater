@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'berkflow', '~> 0.8.0'
 gem 'berkshelf', '~> 4.0'
 gem 'foodcritic', '~> 5.0'
 gem 'rubocop', '~> 0.35.0'

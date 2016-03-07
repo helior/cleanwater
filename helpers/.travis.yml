@@ -1,0 +1,18 @@
+sudo: false
+cache: bundler
+language: ruby
+rvm:
+  - 2.1.6
+before_install:
+  - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
+script: helpers/travis-script.sh
+before_deploy:
+  - make clean
+  - make artifact
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file: "cookbooks.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
