@@ -1,0 +1,6 @@
+name 'cleanwater'
+maintainer 'Helior Colorado'
+maintainer_email 'me@helior.info'
+license 'All rights reserved'
+description 'Install & configure a Drupal site'
+version IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0.0.1'
