@@ -1,5 +1,5 @@
 #!/bin/bash
-source scripts/travis.sh
+source helpers/travis.sh
 set -ev
 
 # If this is a commit in a pull-request, run tests...
